@@ -38,6 +38,7 @@ Then go to the root folder of your catkin workspace and execute ```catkin_make``
 
 When solving assignments please use the following guidelines:
 
+* Look at the [submission details](https://github.com/HBRS-AMR/AMR-Wiki/blob/master/Submission_Details.md)
 * Write readable code, this includes proper names for variables (e.g. wheel_speed_left instead of wsl) and functions (e.g. getDistanceToObstacle() instead of distance())
 * Follow the Python naming conventions ([Google Python Style Guide], [Python Style Guide])
 * Use short and descriptive commit messages (not like [this])
@@ -45,6 +46,7 @@ When solving assignments please use the following guidelines:
 * Use a [git branching model], don't work on your master branch directly
 * Make sure to merge all your changes into the master branch before the deadline. Grading is based on your master branch at the time of the deadline. No late submissions.
 * Repositories are private to prevent plagiarism, if two people have the same code they'll both receive 0 points for the assignment
+
 
 [Google Python Style Guide]: https://google.github.io/styleguide/pyguide.html
 [this]: https://xkcd.com/1296/
