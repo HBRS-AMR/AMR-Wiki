@@ -34,7 +34,12 @@ Clone your repository into the src folder of your catkin workspace.
 
 Then go to the root folder of your catkin workspace and execute ```catkin_make``` in a terminal. Don't forget to source your workspace.
 
-## 3. Assignments
+## 3. Git workflow
+
+If you are unsure about how to use git please look at the
+[Git workflow](https://github.com/HBRS-AMR/AMR-Wiki/blob/master/git.md).
+
+## 4. Assignments
 
 When solving assignments please use the following guidelines:
 
