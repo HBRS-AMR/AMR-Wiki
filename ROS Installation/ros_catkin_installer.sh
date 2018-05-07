@@ -77,6 +77,7 @@ function create_catkin_workspace {
 	catkin_make
 	echo "Sourcing the workspace"
 	source devel/setup.bash
+	sudo chown -R $USER:$USER ~/catkin_ws/
 }
 
 function catkin_bashrc {
