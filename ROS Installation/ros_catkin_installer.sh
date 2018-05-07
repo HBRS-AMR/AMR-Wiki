@@ -21,6 +21,7 @@ function ros_install {
 	echo "Installing Map Server"
 	sudo apt-get -y install ros-kinetic-map-server
 	sudo apt-get -y install python-rosinstall python-rosinstall-generator python-wstool build-essential
+	sudo apt-get -y install python-pyside
 	source /opt/ros/kinetic/setup.bash
 }
 
