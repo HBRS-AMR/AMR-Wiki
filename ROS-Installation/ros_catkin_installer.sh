@@ -23,6 +23,8 @@ function ros_install {
 	sudo apt-get -y install python-rosinstall python-rosinstall-generator python-wstool build-essential
 	sudo apt-get -y install python-pyside
 	source /opt/ros/kinetic/setup.bash
+	sudo chown -R $USER:$USER ~/.ros/
+	
 }
 
 function ros_bashrc {
@@ -57,6 +59,7 @@ function ros_bashrc {
 function ros_amr_bugfix {
 	echo
 	echo "Applying ROS bugfix"
+	cd $DIR
 	echo "Fixing stage.hh in opt/ros/kinetic/include/Stage-4.1/"
 	sudo cp bugfix/stage.hh /opt/ros/kinetic/include/Stage-4.1/stage.hh
 	echo "Fixing joint.hpp in opt/ros/kinetic/include/kdl/"
@@ -65,6 +68,7 @@ function ros_amr_bugfix {
 }
 
 function create_catkin_workspace {
+	source /opt/ros/kinetic/setup.bash
 	echo
 	echo "Initializing catkin workspace"
 	cd $HOME
@@ -158,4 +162,5 @@ function main_menu {
 	done
 }
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 main_menu
