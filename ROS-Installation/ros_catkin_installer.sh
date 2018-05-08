@@ -23,7 +23,7 @@ function ros_install {
 	sudo apt-get -y install python-rosinstall python-rosinstall-generator python-wstool build-essential
 	sudo apt-get -y install python-pyside
 	source /opt/ros/kinetic/setup.bash
-	sudo chown -R $USER:$USER ~/.ros/
+	sudo chown -R $SUDO_USER:$SUDO_USER ~/.ros/
 	
 }
 
@@ -82,7 +82,7 @@ function create_catkin_workspace {
 	catkin_make
 	echo "Sourcing the workspace"
 	source devel/setup.bash
-	sudo chown -R $USER:$USER ~/catkin_ws/
+	sudo chown -R $SUDO_USER:$SUDO_USER ~/catkin_ws/
 }
 
 function catkin_bashrc {
@@ -162,5 +162,9 @@ function main_menu {
 	done
 }
 
+if [[ $(/usr/bin/id -u) -ne 0 ]]; then
+    echo "Please execute this script as sudo!"
+    exit
+fi
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 main_menu
