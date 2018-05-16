@@ -26,7 +26,7 @@ catkin_make
 For the amr packages to work you will need to apply the bugfix provided [here].
 
 [ROS]: https://wiki.ros.org/kinetic/Installation/Ubuntu
-[here]: https://github.com/HBRS-AMR/AMR-Wiki/tree/master/ROS%20Installation
+[here]: https://github.com/HBRS-AMR/AMR-Wiki/tree/master/ROS-Installation
 
 ## 2. Using the amr packages
 
