@@ -22,6 +22,7 @@ function ros_install {
 	sudo apt-get -y install ros-kinetic-map-server
 	sudo apt-get -y install python-rosinstall python-rosinstall-generator python-wstool build-essential
 	sudo apt-get -y install python-pyside
+	sudo apt-get -y install gnuplot
 	source /opt/ros/kinetic/setup.bash
 	sudo chown -R $SUDO_USER:$SUDO_USER ~/.ros/
 	
